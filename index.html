@@ -20,7 +20,8 @@
   link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
   document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
-<style>strong{font-weight:normal;color:orange;font-variant:normal;}.breakout{color:orange;}.reveal a:not(.image){color:orange;}.reveal pre{box-shadow:none;margin-bottom:0;}.reveal code{border:4px solid white;}</style>
+<style>strong{font-weight:normal;color:#00bfc6;font-variant:normal;}.breakout{color:#00bfc6;}.reveal a:not(.image){color:#00bfc6;}.reveal pre{box-shadow:none;margin-bottom:0;}.reveal code{border:4px solid white;}.code-font {font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace !important;
+,monospace !important; }</style>
 <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -29,11 +30,15 @@
 <div class="reveal">
 <div class="slides">
 <section>
-<h1>JavaScript for Beginners</h1>
-<h3>Building Interactive Web Apps on the Frontend</h3>
+<h1><strong style='text-shadow:none;' class="code-font">JavaScript</strong> <span style="font-size:90%">for Beginners</span></h1>
+<p>&nbsp;</p>
+<h3 style="color:#ccc">Building Interactive Web Apps<br>on the Frontend</h3>
+<p>&nbsp;</p>
+<p></p>
 <p>
 <small>Brought to you by <a href="http://devbootcamp.com">Dev Bootcamp</a></small>
 </p>
+<p><small><a href="http://bit.ly/Javascript-DBC-Slides">http://bit.ly/Javascript-DBC-Slides</a></small></p>
 </section>
  
 <section>
@@ -58,7 +63,11 @@
 <section>
 <h2>Outline</h2>
 <ul>
+<li class="fragment">What is Javascript and why does it matter?</li>
 <li class="fragment">Tools for learning and writing JavaScript</li>
+
+
+
 <li class="fragment">Different ways to represent data in JS</li>
 <li class="fragment breakout">Breakout - use your tools!</li>
 <li class="fragment">Loops, conditionals and functions</li>
