@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/reveal.css">
 <link rel="stylesheet" href="css/theme/blood.css" id="theme">
  
-<link rel="stylesheet" href="lib/css/zenburn.css">
+<link rel="stylesheet" href="lib/highlight/styles/monokai-sublime.css">
  
 <script>
   var link = document.createElement( 'link' );
@@ -211,18 +211,18 @@
 <h2>Strings</h2>
 <p>A string is simply a <strong>sequence of characters</strong>. In fact, this sentence itself could be a string. This is what it would look like in JavaScript:</p>
 <pre>
-            <code data-trim class="javascript">
-              "In fact, this sentence itself could be a string."
-            </code>
+    <code data-trim class="javascript">
+          "In fact, this sentence itself could be a string."
+    </code>
           </pre>
 </section>
 <section>
 <h2>Strings</h2>
 <p>Strings can vary greatly in length, from entire novels...</p>
 <pre>
-            <code data-trim class="javascript" style="word-wrap: break-word;">
-              "Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes. But I warn you, if you don't tell me that this means war, if you still try to defend the infamies and horrors perpetrated by that Antichrist—I really believe he is Antichrist—I will have nothing more to do with you and you are no longer my friend, no longer my 'faithful slave,' as you call yourself! But how do you do? I see I have frightened you—sit down and tell me all the news..."
-            </code>
+  <code data-trim class="javascript" style="word-wrap: break-word;">
+  "Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes. But I warn you, if you don't tell me that this means war, if you still try to defend the infamies and horrors perpetrated by that Antichrist—I really believe he is Antichrist—I will have nothing more to do with you and you are no longer my friend, no longer my 'faithful slave,' as you call yourself! But how do you do? I see I have frightened you—sit down and tell me all the news..."
+  </code>
           </pre>
 </section>
 <section>
@@ -230,7 +230,7 @@
 <p>...to single words...</p>
 <pre>
             <code data-trim class="javascript">
-              "hello"
+                                "hello"
             </code>
           </pre>
 </section>
@@ -239,7 +239,7 @@
 <p>...to nothing at all.</p>
 <pre>
             <code data-trim class="javascript">
-              ""
+                                  ""
             </code>
           </pre>
 <p>(this is known as an <strong>empty string</strong>)</p>
@@ -249,7 +249,7 @@
 <p>Strings can contain numbers and don't have to make sense at all:</p>
 <pre>
             <code data-trim class="javascript">
-              "9m52bqu4239wl"
+                            "9m52bqu4239wl"
             </code>
           </pre>
 </section>
@@ -290,10 +290,10 @@ What happens when you add two strings together with the plus symbol?
 <p>The <strong>syntax</strong> for numbers in JavaScript is fairly intuitive.</p>
 <pre>
             <code class="javascript">
-              42
-              3.14
-              100
-              10000
+                                42
+                                3.14
+                                100
+                                10000
             </code>
           </pre>
 </section>
@@ -399,7 +399,7 @@ What happens when you add two strings together with the plus symbol?
           </p>
           <pre>
             <code class="javascript">
-              var magicNumber = 42;
+                        var magicNumber = 42;
             </code>
           </pre>
         </section>
@@ -408,15 +408,15 @@ What happens when you add two strings together with the plus symbol?
           <h2>Breaking it down</h2>
           <pre>
             <code class="javascript">
-              var          // is a reserved word used to declare a local variable
+    var          // is a reserved word used to declare a local variable
 
-              magicNumber  // is the variable name
+    magicNumber  // is the variable name
 
-              =            // is the assignment operator
+    =            // is the assignment operator
 
-              42           // is the value assigned to the variable
+    42           // is the value assigned to the variable
 
-              ;            // signifies the end of a statement in JavaScript
+    ;            // signifies the end of a statement in JavaScript
             </code>
           </pre>
         </section>
@@ -431,16 +431,16 @@ What happens when you add two strings together with the plus symbol?
           <p>You can directly assign values to <strong>variables</strong>...</p>
           <pre>
             <code class="javascript">
-              var seenIt = "...like we've already seen";
+      var seenIt = "...like we've already seen";
             </code>
           </pre>
           <p>...or store <strong>return values</strong> of expressions in <strong>variables</strong></p>
           <pre>
             <code class="javascript">
-              var num = 3;
-              var otherNum = 4;
-              var multiplier = 6;
-              var answerToTheUltimateQuestion = (num + otherNum) * multiplier;
+      var num = 3;
+      var otherNum = 4;
+      var multiplier = 6;
+      var answerToTheUltimateQuestion = (num + otherNum) * multiplier;
             </code>
           </pre>
           <aside class="notes">
@@ -542,10 +542,10 @@ What happens when you add two strings together with the plus symbol?
           <h4>Updating values</h4>
           <pre>
             <code class="javascript">
-              var letters = ["a","b","c","d","e","f","g","h"];
-              letters[0] = "apples"  // -> "apples"
-              letters[1] = "oranges" // -> "oranges"
-              letters      // -> ["apples","oranges","c","d","e","f","g","h"]
+      var letters = ["a","b","c","d","e","f","g","h"];
+      letters[0] = "apples"  // -> "apples"
+      letters[1] = "oranges" // -> "oranges"
+      letters      // -> ["apples","oranges","c","d","e","f","g","h"]
             </code>
           </pre>
         </section>
@@ -618,13 +618,14 @@ What happens when you add two strings together with the plus symbol?
           <h2>Function syntax</h2>
           <pre>
             <code class="javascript">
-              var letters = ["a","b","c"];
-              letters.push("d");
-              // --------------------------
-              letters // the array that we're calling our function on
-              .       // the dot to signify we're about to call a function
-              push    // the name of the function
-              ("d")   // the actual calling of the function with a string argument
+  var letters = ["a","b","c"];
+  letters.push("d");
+  // --------------------------
+
+  letters // the array that we're calling our function on
+  .       // the dot to signify we're about to call a function
+  push    // the name of the function
+  ("d")   // the actual calling of the function with a string argument
             </code>
           </pre>
           <p>We <strong>call a function</strong> with a dot, followed by the function name, followed by a set of parentheses. Sometimes we put other data inside the parens, known as <strong>arguments</strong>; other times functions don't require arguments.</p>
@@ -663,7 +664,7 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Objects</h2>
-          <p>In our metaphor we give each bucket a name. This is the <strong>property name</strong>. The item inside the bucket is its <strong>value</strong>. So, a JavaScript object is a collection of <strong>named properties</strong> which work like key value pairs.</p>
+          <p>In our metaphor we give each bucket a name. This is the <strong>property name</strong>. The item inside the bucket is its <strong>value</strong>. So, a JavaScript object is a collection of <strong>named properties</strong>.</p>
           <img src="img/object-buckets.jpg">
           <aside class="notes">If this collection of buckets was an object, what do you think it would represent?</aside>
         </section>
@@ -673,7 +674,7 @@ What happens when you add two strings together with the plus symbol?
           <p>Let's <strong>instantiate</strong> an object in JavaScript:</p>
           <pre>
             <code class="javascript">
-              var person = {name: "Sam", age: 28, sex: "male"};
+            var person = {name: "Sam", age: 28, sex: "male"};
             </code>
           </pre>
           <p>This <strong>object</strong> contains three <strong>properties</strong> and the object is stored in the variable `person`.</p>
@@ -697,14 +698,14 @@ What happens when you add two strings together with the plus symbol?
           <h4>Updating values</h4>
           <pre>
             <code class="javascript">
-              var person = {name: "Sam", age: 28, sex: "male"};
-              person.age = 29      // -> 29
+            var person = {name: "Sam", age: 28, sex: "male"};
+            person.age = 29      // -> 29
 
-              person
-              // now contains
-              {name: "Sam", age: 29, sex: "male"}
+            person
+            // now contains
+            {name: "Sam", age: 29, sex: "male"}
 
-              person.age           // -> 29
+            person.age           // -> 29
             </code>
           </pre>
         </section>
@@ -714,12 +715,12 @@ What happens when you add two strings together with the plus symbol?
           <h4>Inserting values</h4>
           <pre>
             <code class="javascript">
-              var person = {name: "Sam", age: 28, sex: "male"};
-              person.gender = "cis male"  // -> "cis male"
+          var person = {name: "Sam", age: 28, sex: "male"};
+          person.gender = "cis male"  // -> "cis male"
 
-              person
-              // now contains
-              {name: "Sam", age: 28, sex: "male", gender: "cis male"}
+          person
+          // now contains
+          {name: "Sam", age: 28, sex: "male", gender: "cis male"}
             </code>
           </pre>
         </section>
@@ -729,14 +730,14 @@ What happens when you add two strings together with the plus symbol?
           <h4>Removing values</h4>
           <pre>
             <code class="javascript">
-              var person = {name: "Sam", age: 28, sex: "male", gender: "cis male"}
-              delete person.sex // -> true
+  var person = {name: "Sam", age: 28, sex: "male", gender: "cis male"}
+  delete person.sex // -> true
 
-              person
-              // now contains
-              {name: "Sam", age: 28, gender: "cis male"}
+  person
+  // now contains
+  {name: "Sam", age: 28, gender: "cis male"}
 
-              person.sex        // -> undefined
+  person.sex        // -> undefined
             </code>
           </pre>
           <p>The <strong>delete</strong> operator removes a <strong>key value pair</strong> from an object.</p>
@@ -751,15 +752,15 @@ What happens when you add two strings together with the plus symbol?
           <p>We've been using <strong>dot notation</strong> when working with objects.</p>
           <pre>
             <code class="javascript">
-              var person = {name: "Sam", age: 28, gender: "cis male"}
+        var person = {name: "Sam", age: 28, gender: "cis male"}
 
-              person.name
-              person.age
-              person.gender
+        person.name
+        person.age
+        person.gender
             </code>
           </pre>
           <p>What type of thing does that suggest `name`, `age`, and `gender` are?</p>
-          <p class="fragment"><strong>properties</strong></p>
+          <h3 class="fragment"><strong>properties</strong></h3>
         </section>
 
         <section>
@@ -770,31 +771,27 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>omg let's build.</h2>
-          <p><a href="http://bit.ly/dbc-js-intro">bit.ly/dbc-js-intro</a></p>
-          <aside class="fragment">
-            <p>           With your neighbor, model the following using the data types and structures you just learned:</p> 
-            <ul>
-              <li>A list of three different people</li>
-              <li>The people should have names, ages and a list of their three favorite foods.</li>
-            </ul>
-            <p> What is the best way to do this?</p> 
-            <ul>
-            <li>Arrays? </li>
-            <li>Objects? </li>
-            <li>Arrays of Objects? </li>
+          <h3 class="fragment"><a href="http://bit.ly/dbc-js-intro">bit.ly/dbc-js-intro</a></h3>
+          <p class="fragment">With your neighbor, model the following using the data types and structures you just learned:</p>
+          <p>&nbsp;</p>
+          <ul>
+            <li class="fragment">A list of three different people</li>
+            <li class="fragment">The people should have names, ages and a list of their three favorite foods.</li>
           </ul>
-          <p>Enter your data structure into the console and work through any errors. 
-          </p>
-        </aside>
-      </section>
+        </section>
+
+        <section>
+            <h3> What is the best way to do this?</h3> 
+            <ul>
+              <li class="fragment">Arrays? </li>
+              <li class="fragment">Objects? </li>
+              <li class="fragment">Arrays of Objects? </li>
+            </ul>
+            <p class="fragment">Enter your data structure into the console and work through any errors.</p>
+        </section>
 
       <section>
-        <h2>Up next</h2>
-        <ul>
-          <li>Loops</li>
-          <li>Conditionals</li>
-          <li>Functions</li>
-        </ul>
+        <h1><strong>Loops, Conditionals, &amp; Functions</strong></h1>
       </section>
 
       <section>
@@ -816,8 +813,8 @@ What happens when you add two strings together with the plus symbol?
         <p>This is the syntax for a <strong>while loop</strong>.</p>
         <pre>
           <code class="javascript">
-            var counter = 1;
-            while (counter <= 10) {
+          var counter = 1;
+          while (counter <= 10) {
             console.log("I'm counting in multiples of five!");
             console.log("Here's what's next: " + counter * 5)
             counter++
@@ -832,9 +829,9 @@ What happens when you add two strings together with the plus symbol?
       <pre>
         <code class="javascript">
           for (var counter = 1; counter <= 10; counter++) {
-          console.log("I'm counting in multiples of five!");
-          console.log("Here's what's next: " + counter * 5)
-        }
+            console.log("I'm counting in multiples of five!");
+            console.log("Here's what's next: " + counter * 5)
+          }
       </code>
     </pre>
   </section>
@@ -844,18 +841,18 @@ What happens when you add two strings together with the plus symbol?
     <p>Compare the two:</p>
     <pre>
       <code class="javascript">
-        var counter = 1;
-        while (counter <= 10) {
-        console.log("I'm counting in multiples of five!");
-        console.log("Here's what's next: " + counter * 5)
-        counter++
-      }
-      // -------------------------------------------------
+          var counter = 1;
+          while (counter <= 10) {
+            console.log("I'm counting in multiples of five!");
+            console.log("Here's what's next: " + counter * 5)
+            counter++
+          }
+          // -------------------------------------------------
 
-      for (var counter = 1; counter <= 10; counter++) {
-      console.log("I'm counting in multiples of five!");
-      console.log("Here's what's next: " + counter * 5)
-    }
+          for (var counter = 1; counter <= 10; counter++) {
+            console.log("I'm counting in multiples of five!");
+            console.log("Here's what's next: " + counter * 5)
+          }
   </code>
 </pre>
 </section>
@@ -865,12 +862,12 @@ What happens when you add two strings together with the plus symbol?
   <p>Be careful not to code a loop that will never end. It will cause your browser to freeze and crash!</p>
   <pre>
     <code class="javascript">
-      // Don't run the following code!
-      var counter = 1;
-      while (counter <= 10) {
-      console.log("I'm counting in multiples of five!");
-      console.log("Here's what's next: " + counter * 5)
-    }
+          // Don't run the following code!
+          var counter = 1;
+          while (counter <= 10) {
+            console.log("I'm counting in multiples of five!");
+            console.log("Here's what's next: " + counter * 5)
+          }
   </code>
 </pre>
 <p>This is called an <strong>infinite loop</strong>. Can you see why it never ends?</p>
@@ -881,13 +878,13 @@ What happens when you add two strings together with the plus symbol?
   <p>Here's a fun game with a <strong>while loop</strong>.</p>
   <pre>
     <code class="javascript">
-      var secretPhrase = "bananas"
-      var userInput
-      while (userInput !== secretPhrase) {
-      userInput = prompt("Haha! You will continue to get this annoying\
-      pop up until you guess the secret phrase!")
-    }
-    alert("Drat! You guessed it!")
+  var secretPhrase = "bananas"
+  var userInput
+  while (userInput !== secretPhrase) {
+    userInput = prompt("Haha! You will continue to get this annoying\
+    pop up until you guess the secret phrase!")
+  }
+  alert("Drat! You guessed it!")
   </code>
 </pre>
 </section>
@@ -904,8 +901,8 @@ What happens when you add two strings together with the plus symbol?
     <code class="javascript">
       var letters = ["a","b","c","d","e","f","g","h"];
       for (var i = 0; i < letters.length; i++) {
-      console.log(letters[i]);
-    }
+        console.log(letters[i]);
+      }
   </code>
 </pre>
 <p>There's a lot going on here. So let's talk through it.</p>
@@ -933,10 +930,10 @@ What happens when you add two strings together with the plus symbol?
     <code class="javascript">
       var age = prompt("How old are you?");
       if (age >= 18) {
-      alert("Welcome to this program!")
-    } else {
-    alert("Sorry, you must be 18 or over to use this program.")
-  }
+        alert("Welcome to this program!")
+      } else {
+        alert("Sorry, you must be 18 or over to use this program.")
+      }
 </code>
 </pre>
 </section>
@@ -946,11 +943,11 @@ What happens when you add two strings together with the plus symbol?
   <p></p>
   <pre>
     <code class="javascript">
-      if           // reserved word to start a condtional
-      (age >= 18)  // the "condition"
-      {}           // the "code block" to run if the condition is true
-      else         // reserved word at the end of a conditional
-      {}           // the code block to run if all conditions are false
+    if           // reserved word to start a condtional
+    (age >= 18)  // the "condition"
+    {}           // the "code block" to run if the condition is true
+    else         // reserved word at the end of a conditional
+    {}           // the code block to run if all conditions are false
     </code>
   </pre>
 </section>
@@ -1253,6 +1250,7 @@ What happens when you add two strings together with the plus symbol?
 
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
+<script src="lib/highlight/highlight.pack.js"></script>
 
 <script>
 
