@@ -934,6 +934,7 @@ What happens when you add two strings together with the plus symbol?
       } else {
         alert("Sorry, you must be 18 or over to use this program.")
       }
+
 </code>
 </pre>
 </section>
@@ -966,9 +967,9 @@ What happens when you add two strings together with the plus symbol?
   <p>We <strong>define a function</strong> like this:</p>
   <pre>
     <code class="javascript">
-      var createGreeting = function(name) {
-      return "Welcome to my website, " + name;
-    }
+              var createGreeting = function(name) {
+                return "Welcome to my website, " + name;
+              }
   </code>
 </pre>
 <p>The code is now stored in the variable `createGreeting`. Now we can call this the <strong>createGreeting function</strong>.</p>
@@ -979,7 +980,7 @@ What happens when you add two strings together with the plus symbol?
   <p>We <strong>call a function</strong> by typing its name, followed by parentheses.</p>
   <pre>
     <code class="javascript">
-      var createGreeting = function(name) {
+    var createGreeting = function(name) {
       return "Welcome to my website, " + name;
     }
 
@@ -1004,7 +1005,7 @@ What happens when you add two strings together with the plus symbol?
   <p>The input that we give to functions are called <strong>arguments</strong>.</p>
   <pre>
     <code class="javascript">
-      var sum = function(num1, num2) {}
+                var sum = function(num1, num2) {}
     </code>
   </pre>
   <p>`num1` and `num2` are the <strong>parameters</strong> in this function that show us that we can pass it two arguments.</p>
@@ -1015,10 +1016,10 @@ What happens when you add two strings together with the plus symbol?
   <p>The output from a function is its <strong>return value</strong>.</p>
   <pre>
     <code class="javascript">
-      var sum = function(num1, num2) {
-      var result = num1 + num2;
-      return result;
-    }
+                  var sum = function(num1, num2) {
+                    var result = num1 + num2;
+                    return result;
+                  }
   </code>
 </pre>
 <p>Usually we manipulate our input in some useful way and then <strong>return</strong> that data.</p>
@@ -1030,9 +1031,9 @@ What happens when you add two strings together with the plus symbol?
   <p>Functions don't actually need parameters or a return statement. Here's an example:</p>
   <pre>
     <code class="javascript">
-      var woohoo = function() {
-      alert("WOOHOO!");
-    }
+                      var woohoo = function() {
+                        alert("WOOHOO!");
+                      }
   </code>
 </pre>
 </section>
@@ -1060,7 +1061,7 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Some new files!</h2>
-  <a href="http://bit.ly/dbc-jquery-intro">bit.ly/dbc-jquery-intro</a>
+  <h3><a href="http://bit.ly/dbc-jquery-intro">bit.ly/dbc-jquery-intro</a></h3>
 </section>
 
 <section>
@@ -1079,7 +1080,7 @@ What happens when you add two strings together with the plus symbol?
   <p>The syntax for <strong>selecting elements</strong> with jQuery is:</p>
   <pre>
     <code class="javascript">
-      $("div")
+                              $("div")
     </code>
   </pre>
   <p>This will select all of the div elements on the page.</p>
@@ -1090,14 +1091,14 @@ What happens when you add two strings together with the plus symbol?
   <p>You can use any <strong>CSS selection</strong> syntax with jQuery:</p>
   <pre>
     <code class="javascript">
-      // to select all paragraph elements:
-      $("p")
+        // to select all paragraph elements:
+        $("p")
 
-      // to select all elements with the class 'shadow':
-      $(".shadow")
+        // to select all elements with the class 'shadow':
+        $(".shadow")
 
-      // to select the element with the id 'main-container':
-      $("#main-container")
+        // to select the element with the id 'main-container':
+        $("#main-container")
     </code>
   </pre>
   <p>Just remember to wrap your <strong>selector</strong> in quote marks to make it a <strong>string</strong>.</p>
@@ -1108,7 +1109,7 @@ What happens when you add two strings together with the plus symbol?
   <p>Once we have selected elements, we can <strong>call jQuery functions</strong> on those elements:</p>
   <pre>
     <code class="javascript">
-      $("p").css("background-color", "aqua");
+              $("p").css("background-color", "aqua");
     </code>
   </pre>
   <p>This selects all paragraphs and then turns their background colors <span style="color: aqua; font-weight: 600;">aqua!</span></p>
@@ -1142,7 +1143,7 @@ What happens when you add two strings together with the plus symbol?
   <p>First we need to <strong>select an element</strong>. Let's select our button:</p>
   <pre>
     <code class="javascript">
-      $("#load-tweets-button")
+                        $("#load-tweets-button")
     </code>
   </pre>
 </section>
@@ -1152,9 +1153,9 @@ What happens when you add two strings together with the plus symbol?
   <p>Now we need to <strong>bind a click event</strong> to our button:</p>
   <pre>
     <code class="javascript">
-      $("#load-tweets-button").click(function() {
-      alert("Button clicked!");
-    })
+              $("#load-tweets-button").click(function() {
+                alert("Button clicked!");
+              });
   </code>
 </pre>
 <p>What this says is: 'whenever this thing I have selected is clicked, run the code in this function'.</p>
@@ -1165,10 +1166,10 @@ What happens when you add two strings together with the plus symbol?
   <p>One very common thing to do when a button is clicked is to <strong>update something else on the page</strong>.</p>
   <pre>
     <code class="javascript">
-      $("#load-tweets-button").click(function() {
-      // your code here that updates something else on the page, maybe:
-      $("p").css("background-color", "aqua");
-    })
+  $("#load-tweets-button").click(function() {
+    // your code here that updates something else on the page, maybe:
+    $("p").css("background-color", "aqua");
+  });
   </code>
 </pre>
 <p>Now whenever you click the button, all the paragraphs will turn <span style="color: aqua; font-weight: 600;">aqua!</span></p>
@@ -1203,24 +1204,22 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Putting it all together</h2>
-  <p>You now have all the tools to dynamically create a webpage! It might strain your brain, but it's time to put <strong>everything we learnt into practice</strong>.</p>
+  <p>You now have all the tools to dynamically create a webpage! It might strain your brain, but it's time to put <strong>everything we learned into practice</strong>.</p>
 </section>
 
 <section>
   <h2>omg let's build.</h2>
-  <a href="http://bit.ly/dbc-jquery-intro">bit.ly/dbc-jquery-intro</a>
-  <aside class="fragment">
-    <p>Task: when you click the button all of the tweets will appear in new paragraphs on the page.</p>
-    You will need to use:
+  <h3 class="fragment"><a href="http://bit.ly/dbc-jquery-intro">bit.ly/dbc-jquery-intro</a></h3>
+    <p class="fragment">Task: when you click the button all of the tweets will appear in new paragraphs on the page.</p>
+    <h4 class="fragment">You will need to use:</h4>
     <ul>
-      <li>Loops</li>
-      <li>Array functions</li>
-      <li>Object functions</li>
-      <li>jQuery selectors</li>
-      <li>jQuery event listeners</li>
-      <li>the jQuery append function</li>
+      <li class="fragment">Loops</li>
+      <li class="fragment">Array functions</li>
+      <li class="fragment">Object functions</li>
+      <li class="fragment">jQuery selectors</li>
+      <li class="fragment">jQuery event listeners</li>
+      <li class="fragment">the jQuery append function</li>
     </ul>
-  </aside>
 </section>
 
 <section>
@@ -1241,8 +1240,8 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Thanks for joining us!</h2>
-  <h3>Please give us feedback: 
-<a href="http://bit.ly/intro-js-feedback">bit.ly/intro-js-feedback</a>
+  <p>Please give us feedback:</p>
+  <h3><a href="http://bit.ly/intro-js-feedback">bit.ly/intro-js-feedback</a>
   </h3>
 </section>
 </div>
@@ -1250,7 +1249,6 @@ What happens when you add two strings together with the plus symbol?
 
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
-<script src="lib/highlight/highlight.pack.js"></script>
 
 <script>
 
