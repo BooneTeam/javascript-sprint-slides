@@ -30,7 +30,7 @@
 <div class="reveal">
 <div class="slides">
 <section>
-<h1><strong style='text-shadow:none;' class="code-font">JavaScript</strong> <span style="font-size:90%">for Beginners</span></h1>
+<h1 style='line-height: 1.0em'><strong style='text-shadow:none;' class="code-font">JavaScript</strong> <span style="font-size:90%">for Beginners</span></h1>
 <p>&nbsp;</p>
 <h3 style="color:#ccc">Building Interactive Web Apps<br>on the Frontend</h3>
 <p>&nbsp;</p>
@@ -66,12 +66,12 @@
 <li class="fragment">Why JavaScript matters</li>
 <li class="fragment">Tools for learning and writing JavaScript</li>
 <li class="fragment">Coding Basics - representing data in JS</li>
-<li class="fragment breakout">Breakout - use your tools!</li>
+<li class="fragment breakout"><strong>Breakout - use your tools!</strong></li>
 <li class="fragment">Loops, conditionals and functions</li>
-<li class="fragment breakout">Breakout - play with JavaScript!</li>
+<li class="fragment breakout"><strong>Breakout - play with JavaScript!</strong></li>
 <li class="fragment">Intro to jQuery</li>
 <li class="fragment">Changing a webpage based on user interaction</li>
-<li class="fragment breakout">Breakout - dynamically create a webpage!</li>
+<li class="fragment breakout"><strong>Breakout - dynamically create a webpage!</strong></li>
 </ul>
 </section>
 <section>
@@ -79,13 +79,13 @@
 </section>
 <section>
   <h5>Javascript is the <strong>most commonly used</strong> programming language on earth.</h5>
-  <img src="img/js_chart.png" style='max-width:700px;'>
-  <small><a href="http://stackoverflow.com/research/developer-survey-2016">Stack Overflow Developer Survey 2016</a></small>
+  <img src="img/js_chart.png" style='max-width:700px;' class="fragment">
+  <small class="fragment"><a href="http://stackoverflow.com/research/developer-survey-2016">Stack Overflow Developer Survey 2016</a></small>
 </section>
 <section>
   <h5>And it's <strong>growing</strong> at the fastest rate.</h5>
-  <img src="img/js_module_growth.png" style='max-width:700px;'>
-  <p><small><a href="http://www.modulecounts.com/">modulecounts.com</a></small></p>
+  <img src="img/js_module_growth.png" style='max-width:700px;' class="fragment">
+  <p class="fragment"><small><a href="http://www.modulecounts.com/">modulecounts.com</a></small></p>
 </section>
 <section>
   <h3>Which companies use Javascript?</h3>
@@ -169,8 +169,8 @@
 </section>
 <section>
 <h2>Research techniques</h2>
-<p>A quick note on Stack Overflow...</p>
-<p>Always remember that the section right at the top of the page is the question, not the answer!</p>
+<p class="fragment">A quick note on Stack Overflow...</p>
+<p class="fragment">Always remember that the section right at the top of the page is the question, not the answer!</p>
 </section>
 <section>
 <img src="img/stackoverflow.jpg">
@@ -200,8 +200,8 @@
 </section>
 <section>
 <h2>Variables</h2>
-<p>Think of variables as a <strong>label</strong> we can write on and apply to different things.</p>
-<img src="img/post-it.png" width="50%"/>
+<p class="fragment">Think of variables as a <strong>label</strong> we can write on and apply to different things.</p>
+<img src="img/post-it.png" width="50%"/ class="fragment">
 </section>
 <section>
 <h2>Variables</h2>
@@ -209,40 +209,39 @@
 </section>
 <section>
 <h2>Strings</h2>
-<p>A string is simply a <strong>sequence of characters</strong>. In fact, this sentence itself could be a string. This is what it would look like in JavaScript:</p>
-<pre>
+<p class="fragment">A string is simply a <strong>sequence of characters</strong>. In fact, this sentence itself could be a string. This is what it would look like in JavaScript:</p>
+<pre class="fragment">
     <code data-trim class="javascript">
+
           "In fact, this sentence itself could be a string."
+
     </code>
           </pre>
 </section>
 <section>
-<h2>Strings</h2>
-<p>Strings can vary greatly in length, from entire novels...</p>
-<pre>
+<h3>Strings can vary greatly in length, <span class="fragment">from entire novels...</span></h3>
+<pre class="fragment">
   <code data-trim class="javascript" style="word-wrap: break-word;">
   "Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes. But I warn you, if you don't tell me that this means war, if you still try to defend the infamies and horrors perpetrated by that Antichrist—I really believe he is Antichrist—I will have nothing more to do with you and you are no longer my friend, no longer my 'faithful slave,' as you call yourself! But how do you do? I see I have frightened you—sit down and tell me all the news..."
   </code>
           </pre>
 </section>
 <section>
-<h2>Strings</h2>
-<p>...to single words...</p>
-<pre>
+<h3>...to single words...</h3>
+<pre class="fragment">
             <code data-trim class="javascript">
                                 "hello"
             </code>
           </pre>
 </section>
 <section>
-<h2>Strings</h2>
-<p>...to nothing at all.</p>
-<pre>
+<h3>...to nothing at all.</h3>
+<pre class="fragment">
             <code data-trim class="javascript">
                                   ""
             </code>
           </pre>
-<p>(this is known as an <strong>empty string</strong>)</p>
+<p class="fragment">(this is known as an <strong>empty string</strong>)</p>
 </section>
 <section>
 <h2>Strings</h2>
@@ -288,7 +287,7 @@ What happens when you add two strings together with the plus symbol?
 <section>
 <h2>Numbers</h2>
 <p>The <strong>syntax</strong> for numbers in JavaScript is fairly intuitive.</p>
-<pre>
+<pre class="fragment">
             <code class="javascript">
                                 42
                                 3.14
@@ -301,31 +300,31 @@ What happens when you add two strings together with the plus symbol?
 <h2>Numbers</h2>
 <p>You can perform simple arithmetic on numbers using:</p>
 <table>
-<tr>
+<tr class="fragment">
 <td>Addition</td>
 <td>+</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Subtraction</td>
 <td>-</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Multiplication</td>
 <td>*</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Division</td>
 <td>/</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Modulus</td>
 <td>%</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Increment</td>
 <td>++</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Decrement</td>
 <td>--</td>
 </tr>
@@ -335,27 +334,27 @@ What happens when you add two strings together with the plus symbol?
 <h2>Numbers</h2>
 <p>You can also perform simple comparison operations on numbers using:</p>
 <table>
-<tr>
+<tr class="fragment">
 <td>Equality</td>
 <td>===</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Inequality</td>
 <td>!==</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Greater than</td>
 <td>></td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Greater than or equal to</td>
 <td>>=</td>
 </tr>
-<tr>
+<tr class="fragment">
 <td>Less than</td>
 <td><</td>
             </tr>
-            <tr>
+            <tr class="fragment">
               <td>Less than or equal to</td>
               <td><=</td>
             </tr>
@@ -378,12 +377,11 @@ What happens when you add two strings together with the plus symbol?
         </section>
 
         <section>
-          <h2>Return values</h2>
-          <p>What <strong>data type</strong> did JavaScript return when you used a <strong>comparison operator</strong>?</p>
+          <h3>What <strong>data type</strong> did JavaScript return when you used a <strong>comparison operator</strong>?</h3>
           <div class="fragment">
             <p>Comparison operators will always return a</p>
-            <p><strong>Boolean</strong></p>
-            <p>true or false</p>
+            <h2><strong>Boolean</strong></h2>
+            <p class="fragment">(true or false)</p>
           </div>
         </section>
 
@@ -406,17 +404,17 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Breaking it down</h2>
-          <pre>
+          <pre class="fragment">
             <code class="javascript">
-    var          // is a reserved word used to declare a local variable
+    <span class="fragment">var          // is a reserved word used to declare a local variable</span>
 
-    magicNumber  // is the variable name
+    <span class="fragment">magicNumber  // is the variable name</span>
 
-    =            // is the assignment operator
+    <span class="fragment">=            // is the assignment operator</span>
 
-    42           // is the value assigned to the variable
+    <span class="fragment">42           // is the value assigned to the variable</span>
 
-    ;            // signifies the end of a statement in JavaScript
+    <span class="fragment">;            // signifies the end of a statement in JavaScript</span>
             </code>
           </pre>
         </section>
@@ -428,14 +426,14 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Storing things</h2>
-          <p>You can directly assign values to <strong>variables</strong>...</p>
-          <pre>
+          <p class="fragment">You can directly assign values to <strong>variables</strong>...</p>
+          <pre class="fragment">
             <code class="javascript">
       var seenIt = "...like we've already seen";
             </code>
           </pre>
-          <p>...or store <strong>return values</strong> of expressions in <strong>variables</strong></p>
-          <pre>
+          <p class="fragment">...or store <strong>return values</strong> of expressions in <strong>variables</strong></p>
+          <pre class="fragment">
             <code class="javascript">
       var num = 3;
       var otherNum = 4;
@@ -452,8 +450,8 @@ What happens when you add two strings together with the plus symbol?
           <h2>Data structures</h2>
           <p>Let's look at two more <strong>data structures</strong>:</p>
           <ul>
-            <li>Arrays</li>
-            <li>Objects</li>
+            <li class="fragment">Arrays</li>
+            <li class="fragment">Objects</li>
           </ul>
           <aside class="notes">Note, I said data structures, not data types. There is a subtle difference.</aside>
         </section>
@@ -462,10 +460,10 @@ What happens when you add two strings together with the plus symbol?
           <h2>Data structures</h2>
           <p>For the following data structures, we are going to learn how to create, or <strong>instantiate</strong>, them and then learn the following operations:</p>
           <ul>
-            <li>Accessing values</li>
-            <li>Updating values</li>
-            <li>Inserting values</li>
-            <li>Removing values</li>
+            <li class="fragment">Accessing values</li>
+            <li class="fragment">Updating values</li>
+            <li class="fragment">Inserting values</li>
+            <li class="fragment">Removing values</li>
           </ul>
         </section>
 
@@ -477,26 +475,25 @@ What happens when you add two strings together with the plus symbol?
         <section>
           <h2>Arrays</h2>
           <p>Think of an array as a bunch of buckets, each of which stores a value.</p>
-          <img src="img/original-buckets.jpg">
+          <img src="img/original-buckets.jpg" class="fragment">
         </section>
 
         <section>
           <h2>Arrays</h2>
-          <p>If we were to put the first eight characters of the alphabet into these buckets, it would look like this in JavaScript:</p>
-          <pre>
+          <p class="fragment">If we were to put the first eight characters of the alphabet into these buckets, it would look like this in JavaScript:</p>
+          <pre class="fragment">
             <code class="javascript">
               var letters = ["a","b","c","d","e","f","g","h"];
             </code>
           </pre>
-          <p>An <strong>array</strong> of the characters "a" through "h" is now stored in the variable `letters`. This is an array of <strong>strings</strong>.</p>
+          <p class="fragment">An <strong>array</strong> of the characters "a" through "h" is now stored in the variable `letters`. This is an array of <strong>strings</strong>.</p>
         </section>
 
         <section>
-          <h2>Arrays</h2>
-          <h4>Accessing values</h4>
-          <p>Every element in an array is stored in a specific position known as an <strong>index</strong>. Arrays are indexed starting at 0 and incrementing by 1 for each position.</p>
+          <h2>Accessing values</h2>
+          <p class="fragment">Every element in an array is stored in a specific position known as an <strong>index</strong>. Arrays are indexed starting at 0 and incrementing by 1 for each position.</p>
           <table>
-            <tr>
+            <tr class="fragment">
               <td>&nbsp;0</td>
               <td>&nbsp;1</td>
               <td>&nbsp;2</td>
@@ -506,7 +503,7 @@ What happens when you add two strings together with the plus symbol?
               <td>&nbsp;6</td>
               <td>&nbsp;7</td>
             </tr>
-            <tr>
+            <tr class="fragment">
               <td>"a"</td>
               <td>"b"</td>
               <td>"c"</td>
@@ -521,13 +518,13 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Arrays</h2>
-          <p>You refer to each <strong>element</strong> by its <strong>index</strong>.</p>
-          <img src="img/array-buckets.jpg">
+          <p class="fragment">You refer to each <strong>element</strong> by its <strong>index</strong>.</p>
+          <img src="img/array-buckets.jpg" class="fragment">
         </section>
 
         <section>
           <h2>Arrays</h2>
-          <h4>Accessing values</h4>
+          <h4><strong>Accessing values</strong></h4>
           <pre>
             <code class="javascript">
               var letters = ["a","b","c","d","e","f","g","h"];
@@ -539,7 +536,7 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Arrays</h2>
-          <h4>Updating values</h4>
+          <h4><strong>Updating values</strong></h4>
           <pre>
             <code class="javascript">
       var letters = ["a","b","c","d","e","f","g","h"];
@@ -552,7 +549,7 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Arrays</h2>
-          <h4>Inserting values</h4>
+          <h4><strong>Inserting values</strong></h4>
           <pre>
             <code class="javascript">
               var letters = ["a","b","c","d"];
@@ -560,12 +557,12 @@ What happens when you add two strings together with the plus symbol?
               letters // -> ["a","b","c","d","elephant"]
             </code>
           </pre>
-          <p>The <strong>push</strong> function adds an element to the end of an array.</p>
+          <p class="fragment">The <strong>push</strong> function adds an element to the end of an array.</p>
         </section>
 
         <section>
           <h2>Arrays</h2>
-          <h4>Inserting values</h4>
+          <h4><strong>Inserting values</strong></h4>
           <pre>
             <code class="javascript">
               var letters = ["a","b","c","d", "elephant"];
@@ -573,13 +570,13 @@ What happens when you add two strings together with the plus symbol?
               letters // -> ["zebra","a","b","c","d", "elephant"]
             </code>
           </pre>
-          <p>The <strong>unshift</strong> function adds an element to the start of an array.</p>
+          <p class="fragment">The <strong>unshift</strong> function adds an element to the start of an array.</p>
           <aside class="notes">What element is in index zero of the array now?</aside>
         </section>
 
         <section>
           <h2>Arrays</h2>
-          <h4>Removing values</h4>
+          <h4><strong>Removing values</strong></h4>
           <pre>
             <code class="javascript">
               var letters = ["a","b","c","d"];
@@ -587,13 +584,13 @@ What happens when you add two strings together with the plus symbol?
               letters // -> ["a","b","c"]
             </code>
           </pre>
-          <p>The <strong>pop</strong> function removes an element from the end of an array.</p>
+          <p class="fragment">The <strong>pop</strong> function removes an element from the end of an array.</p>
           <aside class="notes">What element is in index zero of the array now?</aside>
         </section>
 
         <section>
           <h2>Arrays</h2>
-          <h4>Removing values</h4>
+          <h4><strong>Removing values</strong></h4>
           <pre>
             <code class="javascript">
               var letters = ["a","b","c","d"];
@@ -601,34 +598,32 @@ What happens when you add two strings together with the plus symbol?
               letters // -> ["b","c", "d"]
             </code>
           </pre>
-          <p>The <strong>shift</strong> function removes an element from the start of an array.</p>
+          <p class="fragment">The <strong>shift</strong> function removes an element from the start of an array.</p>
           <aside class="notes">What element is in index zero of the array now?</aside>
         </section>
 
-        <section>
-          <h3>A quick note on Functions</h3>
-        </section>
 
         <section>
           <h2>Functions</h2>
-          <p>All data types in JavaScript come with some built in behavior called <strong>functions</strong>. We've already seen a few array functions with push, pop, shift and unshift.</p>
+          <p class="fragment">All data types in JavaScript come with some built in behavior called <strong>functions</strong>. We've already seen a few array functions with push, pop, shift and unshift.</p>
         </section>
 
         <section>
           <h2>Function syntax</h2>
-          <pre>
+          <pre class="fragment">
             <code class="javascript">
-  var letters = ["a","b","c"];
+  <span class="fragment">var letters = ["a","b","c"];
   letters.push("d");
-  // --------------------------
+  // --------------------------</span>
 
-  letters // the array that we're calling our function on
-  .       // the dot to signify we're about to call a function
-  push    // the name of the function
-  ("d")   // the actual calling of the function with a string argument
+  <span class="fragment">letters // the array that we're calling our function on</span>
+  <span class="fragment">.       // the dot to signify we're about to call a function</span>
+  <span class="fragment">push    // the name of the function</span>
+  <span class="fragment">("d")   // the actual calling of the function with a string argument</span>
             </code>
           </pre>
-          <p>We <strong>call a function</strong> with a dot, followed by the function name, followed by a set of parentheses. Sometimes we put other data inside the parens, known as <strong>arguments</strong>; other times functions don't require arguments.</p>
+          <p class="fragment">We <strong>call a function</strong> with a dot, followed by the function name, followed by a set of parentheses.</p>
+          <p class="fragment">Sometimes we put other data inside the parens, known as <strong>arguments</strong>; other times functions don't require arguments.</p>
         </section>
 
         <section>
@@ -638,28 +633,28 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Properties</h2>
-          <pre>
+          <pre class="fragment">
             <code class="javascript">
               var fruits = ["apple","banana","carrot"];
-              fruits.length // -> 3
-              fruits[2].length // -> 6
-              fruits.push("d");
-              fruits.length // -> 4
+              <span class="fragment">fruits.length // -> 3</span>
+              <span class="fragment">fruits[2].length // -> 6</span>
+              <span class="fragment">fruits.push("d");</span>
+              <span class="fragment">fruits.length // -> 4</span>
             </code>
           </pre>
-          <p><strong>length</strong> is a good example of a <strong>property</strong> on both arrays and strings. Note how properties don't need parentheses after them.</p>
+          <p class="fragment"><strong>length</strong> is a good example of a <strong>property</strong> on both arrays and strings. Note how properties don't need parentheses after them.</p>
         </section>
 
         <section>
           <h2>Functions vs Properties</h2>
-          <p>It can be very confusing to know whether something is a <strong>function</strong> or an <strong>property</strong> when you start out with JavaScript. It's something you'll get used to.</p>
-          <p>Remember you always have the Web to look things up!</p>
+          <p class="fragment">It can be very confusing to know whether something is a <strong>function</strong> or an <strong>property</strong> when you start out with JavaScript. It's something you'll get used to.</p>
+          <h3 class="fragment">Remember you always have the Web to look things up!</h3>
         </section>
 
         <section>
           <h2>Objects</h2>
-          <p><strong>Objects</strong> in JavaScript are similar to arrays in that they contain a collection of values.</p>
-          <p>However, unlike array values which are <strong>accessed and ordered by index</strong>, the values in objects are known as properties are accessed via <strong>property names</strong></p>
+          <p class="fragment"><strong>Objects</strong> in JavaScript are similar to arrays in that they contain a collection of values.</p>
+          <p class="fragment">However, unlike array values which are <strong>accessed and ordered by index</strong>, the values in objects are known as properties are accessed via <strong>property names</strong></p>
         </section>
 
         <section>
@@ -671,76 +666,75 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Objects</h2>
-          <p>Let's <strong>instantiate</strong> an object in JavaScript:</p>
-          <pre>
+          <p class="fragment">Let's <strong>instantiate</strong> an object in JavaScript:</p>
+          <pre class="fragment">
             <code class="javascript">
             var person = {name: "Sam", age: 28, sex: "male"};
             </code>
           </pre>
-          <p>This <strong>object</strong> contains three <strong>properties</strong> and the object is stored in the variable `person`.</p>
+          <p class="fragment">This <strong>object</strong> contains three <strong>properties</strong> and the object is stored in the variable `person`.</p>
           <aside class="notes">What data types are the values in this object?</aside>
         </section>
 
         <section>
           <h2>Objects</h2>
-          <h4>Accessing values</h4>
-          <pre>
+          <h4><strong>Accessing values</strong></h4>
+          <pre class="fragment">
             <code class="javascript">
               var person = {name: "Sam", age: 28, sex: "male"};
-              person.name      // -> "Sam"
-              person["name"]   // -> "Sam"
+              <span class="fragment">person.name      // -> "Sam"</span>
+              <span class="fragment">person["name"]   // -> "Sam"</span>
             </code>
           </pre>
         </section>
 
         <section>
           <h2>Objects</h2>
-          <h4>Updating values</h4>
-          <pre>
+          <h4><strong>Updating values</strong></h4>
+          <pre class="fragment">
             <code class="javascript">
             var person = {name: "Sam", age: 28, sex: "male"};
-            person.age = 29      // -> 29
+            <span class="fragment">person.age           // -> 28</span>
+            <span class="fragment">person.age = 29      // -> 29</span>
 
-            person
-            // now contains
-            {name: "Sam", age: 29, sex: "male"}
+            <span class="fragment">// person now contains</span>
+            <span class="fragment">{name: "Sam", age: 29, sex: "male"}</span>
 
-            person.age           // -> 29
+            <span class="fragment">person.age           // -> 29</span>
             </code>
           </pre>
         </section>
 
         <section>
           <h2>Objects</h2>
-          <h4>Inserting values</h4>
+          <h4><strong>Inserting values</strong></h4>
           <pre>
             <code class="javascript">
           var person = {name: "Sam", age: 28, sex: "male"};
           person.gender = "cis male"  // -> "cis male"
 
-          person
-          // now contains
-          {name: "Sam", age: 28, sex: "male", gender: "cis male"}
+          <span class="fragment">// person now contains</span>
+          <span class="fragment">{name: "Sam", age: 28, sex: "male", gender: "cis male"}</span>
+          
             </code>
           </pre>
         </section>
 
         <section>
           <h2>Objects</h2>
-          <h4>Removing values</h4>
+          <h4><strong>Removing values</strong></h4>
           <pre>
             <code class="javascript">
   var person = {name: "Sam", age: 28, sex: "male", gender: "cis male"}
   delete person.sex // -> true
 
-  person
-  // now contains
-  {name: "Sam", age: 28, gender: "cis male"}
+  <span class="fragment">// person now contains</span>
+  <span class="fragment">{name: "Sam", age: 28, gender: "cis male"}</span>
 
-  person.sex        // -> undefined
+  <span class="fragment">person.sex        // -> undefined</span>
             </code>
           </pre>
-          <p>The <strong>delete</strong> operator removes a <strong>key value pair</strong> from an object.</p>
+          <p class="fragment">The <strong>delete</strong> operator removes a <strong>key value pair</strong> from an object.</p>
           <aside class="notes">
             Why did I not call `delete` a function?
             It's relatively rare to use `delete`. Most often you are reading or accessing data. Second most, adding or inserting data. Third most, updating data. Rarely, deleting or removing data.
@@ -749,8 +743,8 @@ What happens when you add two strings together with the plus symbol?
 
         <section>
           <h2>Taxonomy</h2>
-          <p>We've been using <strong>dot notation</strong> when working with objects.</p>
-          <pre>
+          <p class="fragment">We've been using <strong>dot notation</strong> when working with objects.</p>
+          <pre class="fragment">
             <code class="javascript">
         var person = {name: "Sam", age: 28, gender: "cis male"}
 
@@ -759,7 +753,7 @@ What happens when you add two strings together with the plus symbol?
         person.gender
             </code>
           </pre>
-          <p>What type of thing does that suggest `name`, `age`, and `gender` are?</p>
+          <p class="fragment">What type of thing does that suggest `name`, `age`, and `gender` are?</p>
           <h3 class="fragment"><strong>properties</strong></h3>
         </section>
 
@@ -803,8 +797,8 @@ What happens when you add two strings together with the plus symbol?
         <h2>Loops</h2>
         <p>We will look at the syntax for two JavaScript <strong>loops</strong>:</p>
         <ul>
-          <li>for</li>
-          <li>while</li>
+          <li class="fragment">for</li>
+          <li class="fragment">while</li>
         </ul>
       </section>
 
@@ -839,7 +833,7 @@ What happens when you add two strings together with the plus symbol?
   <section>
     <h2>Loops</h2>
     <p>Compare the two:</p>
-    <pre>
+    <pre class="fragment">
       <code class="javascript">
           var counter = 1;
           while (counter <= 10) {
@@ -849,18 +843,18 @@ What happens when you add two strings together with the plus symbol?
           }
           // -------------------------------------------------
 
-          for (var counter = 1; counter <= 10; counter++) {
+          <span class="fragment">for (var counter = 1; counter <= 10; counter++) {
             console.log("I'm counting in multiples of five!");
             console.log("Here's what's next: " + counter * 5)
-          }
+          }</span>
   </code>
 </pre>
 </section>
 
 <section>
   <h2>Warning!</h2>
-  <p>Be careful not to code a loop that will never end. It will cause your browser to freeze and crash!</p>
-  <pre>
+  <p class="fragment">Be careful not to code a loop that will never end. It will cause your browser to freeze and crash!</p>
+  <pre class="fragment">
     <code class="javascript">
           // Don't run the following code!
           var counter = 1;
@@ -870,13 +864,13 @@ What happens when you add two strings together with the plus symbol?
           }
   </code>
 </pre>
-<p>This is called an <strong>infinite loop</strong>. Can you see why it never ends?</p>
+<p class="fragment">This is called an <strong>infinite loop</strong>. Can you see why it never ends?</p>
 </section>
 
 <section>
   <h2>Loops</h2>
-  <p>Here's a fun game with a <strong>while loop</strong>.</p>
-  <pre>
+  <p class="fragment">Here's a fun game with a <strong>while loop</strong>.</p>
+  <pre class="fragment">
     <code class="javascript">
   var secretPhrase = "bananas"
   var userInput
@@ -887,6 +881,7 @@ What happens when you add two strings together with the plus symbol?
   alert("Drat! You guessed it!")
   </code>
 </pre>
+<aside class="notes">Open up console and do this live in</aside>
 </section>
 
 <section>
@@ -896,8 +891,8 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Loops</h2>
-  <p>Here's a <strong>for loop</strong> looping over and printing out every element in our letters array:</p>
-  <pre>
+  <p class="fragment">Here's a <strong>for loop</strong> looping over and printing out every element in our letters array:</p>
+  <pre class="fragment">
     <code class="javascript">
       var letters = ["a","b","c","d","e","f","g","h"];
       for (var i = 0; i < letters.length; i++) {
@@ -905,7 +900,7 @@ What happens when you add two strings together with the plus symbol?
       }
   </code>
 </pre>
-<p>There's a lot going on here. So let's talk through it.</p>
+<p class="fragment">There's a lot going on here. So let's talk through it.</p>
 </section>
 
 <section>
@@ -925,8 +920,8 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Conditionals</h2>
-  <p>Maybe you need to check someone's age before you let them use your program:</p>
-  <pre>
+  <p class="fragment">Maybe you need to check someone's age before you let them use your program:</p>
+  <pre class="fragment">
     <code class="javascript">
       var age = prompt("How old are you?");
       if (age >= 18) {
@@ -942,55 +937,51 @@ What happens when you add two strings together with the plus symbol?
 <section>
   <h2>Breaking it down</h2>
   <p></p>
-  <pre>
+  <pre class="fragment">
     <code class="javascript">
-    if           // reserved word to start a condtional
-    (age >= 18)  // the "condition"
-    {}           // the "code block" to run if the condition is true
-    else         // reserved word at the end of a conditional
-    {}           // the code block to run if all conditions are false
+    <span class="fragment">if           // reserved word to start a condtional</span>
+    <span class="fragment">(age >= 18)  // the "condition"</span>
+    <span class="fragment">{}           // the "code block" to run if the condition is true</span>
+    <span class="fragment">else         // reserved word at the end of a conditional</span>
+    <span class="fragment">{}           // the code block to run if all conditions are false</span>
     </code>
   </pre>
 </section>
 
 <section>
-  <h2>Functions</h2>
-</section>
-
-<section>
   <h2>What is a function?</h2>
-  <p>A <strong>function</strong> is a selection of code that you can save and run later, potentially multiple times.</p>
+  <p class="fragment">A <strong>function</strong> is a selection of code that you can save and run later, potentially multiple times.</p>
 </section>
 
 <section>
   <h2>Function syntax</h2>
-  <p>We <strong>define a function</strong> like this:</p>
-  <pre>
+  <p class="fragment">We <strong>define a function</strong> like this:</p>
+  <pre class="fragment">
     <code class="javascript">
               var createGreeting = function(name) {
                 return "Welcome to my website, " + name;
               }
   </code>
 </pre>
-<p>The code is now stored in the variable `createGreeting`. Now we can call this the <strong>createGreeting function</strong>.</p>
+<p class="fragment">The code is now stored in the variable `createGreeting`. Now we can call this the <strong>createGreeting</strong> function.</p>
 </section>
 
 <section>
   <h2>Calling a function</h2>
-  <p>We <strong>call a function</strong> by typing its name, followed by parentheses.</p>
-  <pre>
+  <p class="fragment">We <strong>call a function</strong> by typing its name, followed by parentheses.</p>
+  <pre class="fragment">
     <code class="javascript">
     var createGreeting = function(name) {
       return "Welcome to my website, " + name;
     }
 
-    createGreeting("Sam")     // -> "Welcome to my website, Sam"
+    <span class="fragment">createGreeting("Sam")     // -> "Welcome to my website, Sam"</span>
 
-    createGreeting("Debbie")  // -> "Welcome to my website, Debbie"
+    <span class="fragment">createGreeting("Debbie")  // -> "Welcome to my website, Debbie"</span>
 
-    createGreeting("Britney") // -> "Welcome to my website, Britney"
+    <span class="fragment">createGreeting("Britney") // -> "Welcome to my website, Britney"</span>
 
-    alert(createGreeting("Stranger"))
+    <span class="fragment">alert(createGreeting("Stranger"))</span>
   </code>
 </pre>
 </section>
@@ -1002,34 +993,34 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Arguments</h2>
-  <p>The input that we give to functions are called <strong>arguments</strong>.</p>
-  <pre>
+  <p class="fragment">The input that we give to functions are called <strong>arguments</strong>.</p>
+  <pre class="fragment">
     <code class="javascript">
                 var sum = function(num1, num2) {}
     </code>
   </pre>
-  <p>`num1` and `num2` are the <strong>parameters</strong> in this function that show us that we can pass it two arguments.</p>
+  <p class="fragment">`num1` and `num2` are the <strong>parameters</strong> in this function that show us that we can pass it two arguments.</p>
 </section>
 
 <section>
   <h2>Return values</h2>
-  <p>The output from a function is its <strong>return value</strong>.</p>
-  <pre>
+  <p class="fragment">The output from a function is its <strong>return value</strong>.</p>
+  <pre class="fragment">
     <code class="javascript">
                   var sum = function(num1, num2) {
                     var result = num1 + num2;
-                    return result;
+                    return result; // return value!
                   }
   </code>
 </pre>
-<p>Usually we manipulate our input in some useful way and then <strong>return</strong> that data.</p>
+<p class="fragment">Usually we manipulate our input in some useful way and then <strong>return</strong> that data.</p>
 <aside class="notes">Note as in this example, a function can have multiple parameters. These parameters act as variables within the function and any arguments you pass to this function when you call it will be accessible inside those variables/parameters.</aside>
 </section>
 
 <section>
   <h2>Functions</h2>
-  <p>Functions don't actually need parameters or a return statement. Here's an example:</p>
-  <pre>
+  <p class="fragment">Functions <strong>don't actually need</strong> parameters or a return statement. Here's an example:</p>
+  <pre class="fragment">
     <code class="javascript">
                       var woohoo = function() {
                         alert("WOOHOO!");
@@ -1052,6 +1043,9 @@ What happens when you add two strings together with the plus symbol?
     </ul>
   </aside>
 </section>
+<section>
+  <h1><strong>Intro to jQuery</strong></h1>
+</section>
 
 <section>
   <h2>jQuery</h2>
@@ -1072,47 +1066,47 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Selecting elements</h2>
-  <p>We are going to be playing with the <strong>HTML elements</strong> on our page. To do that, we first need to <strong>select</strong> those elements using jQuery.</p>
+  <p class="fragment">We are going to be playing with the <strong>HTML elements</strong> on our page. To do that, we first need to <strong>select</strong> those elements using jQuery.</p>
 </section>
 
 <section>
   <h2>Selecting elements</h2>
-  <p>The syntax for <strong>selecting elements</strong> with jQuery is:</p>
-  <pre>
+  <p class="fragment">The syntax for <strong>selecting elements</strong> with jQuery is:</p>
+  <pre class="fragment">
     <code class="javascript">
                               $("div")
     </code>
   </pre>
-  <p>This will select all of the div elements on the page.</p>
+  <p class="fragment">This will select all of the div elements on the page.</p>
 </section>
 
 <section>
   <h2>Selecting elements</h2>
-  <p>You can use any <strong>CSS selection</strong> syntax with jQuery:</p>
-  <pre>
+  <p class="fragment">You can use any <strong>CSS selection</strong> syntax with jQuery:</p>
+  <pre class="fragment">
     <code class="javascript">
-        // to select all paragraph elements:
-        $("p")
+        <span class="fragment">// to select all paragraph elements:
+        $("p")</span>
 
-        // to select all elements with the class 'shadow':
-        $(".shadow")
+        <span class="fragment">// to select all elements with the class 'shadow':
+        $(".shadow")</span>
 
-        // to select the element with the id 'main-container':
-        $("#main-container")
+        <span class="fragment">// to select the element with the id 'main-container':
+        $("#main-container")</span>
     </code>
   </pre>
-  <p>Just remember to wrap your <strong>selector</strong> in quote marks to make it a <strong>string</strong>.</p>
+  <p class="fragment">Just remember to wrap your <strong>selector</strong> in quote marks to make it a <strong>string</strong>.</p>
 </section>
 
 <section>
   <h2>jQuery functions</h2>
-  <p>Once we have selected elements, we can <strong>call jQuery functions</strong> on those elements:</p>
-  <pre>
+  <p class="fragment">Once we have selected elements, we can <strong>call jQuery functions</strong> on those elements:</p>
+  <pre class="fragment">
     <code class="javascript">
               $("p").css("background-color", "aqua");
     </code>
   </pre>
-  <p>This selects all paragraphs and then turns their background colors <span style="color: aqua; font-weight: 600;">aqua!</span></p>
+  <p class="fragment">This selects all paragraphs and then turns their background colors <span style="color: aqua; font-weight: 600;">aqua!</span></p>
 </section>
 
 <section>
@@ -1130,18 +1124,17 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Listening for events</h2>
-  <p>Interacting with a website through <strong>clicks</strong> and <strong>keystrokes</strong> really brings JavaScript (and websites) to life!</p>
+  <p class="fragment">Interacting with a website through <strong>clicks</strong> and <strong>keystrokes</strong> really brings JavaScript (and websites) to life!</p>
+</section>
+
+<section>
+  <h3>Let's learn how to tell certain elements on our page to<br><strong>listen for a click event</strong>.</h3>
 </section>
 
 <section>
   <h2>Listening for events</h2>
-  <p>Let's learn how to tell certain elements on our page to <strong>listen for a click event</strong>.</p>
-</section>
-
-<section>
-  <h2>Listening for events</h2>
-  <p>First we need to <strong>select an element</strong>. Let's select our button:</p>
-  <pre>
+  <p class="fragment">First we need to <strong>select an element</strong>. Let's select our button:</p>
+  <pre class="fragment">
     <code class="javascript">
                         $("#load-tweets-button")
     </code>
@@ -1150,21 +1143,21 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Listening for events</h2>
-  <p>Now we need to <strong>bind a click event</strong> to our button:</p>
-  <pre>
+  <p class="fragment">Now we need to <strong>bind a click event</strong> to our button:</p>
+  <pre class="fragment">
     <code class="javascript">
               $("#load-tweets-button").click(function() {
                 alert("Button clicked!");
               });
   </code>
 </pre>
-<p>What this says is: 'whenever this thing I have selected is clicked, run the code in this function'.</p>
+<p class="fragment">What this says is: 'whenever this thing I have selected is clicked, run the code in this function'.</p>
 </section>
 
 <section>
   <h2>Listening for events</h2>
-  <p>One very common thing to do when a button is clicked is to <strong>update something else on the page</strong>.</p>
-  <pre>
+  <p class="fragment">One very common thing to do when a button is clicked is to <strong>update something else on the page</strong>.</p>
+  <pre class="fragment">
     <code class="javascript">
   $("#load-tweets-button").click(function() {
     // your code here that updates something else on the page, maybe:
@@ -1172,34 +1165,30 @@ What happens when you add two strings together with the plus symbol?
   });
   </code>
 </pre>
-<p>Now whenever you click the button, all the paragraphs will turn <span style="color: aqua; font-weight: 600;">aqua!</span></p>
+<p class="fragment">Now whenever you click the button, all the paragraphs will turn <span style="color: aqua; font-weight: 600;">aqua!</span></p>
 </section>
 
 <section>
   <h2>Updating the page</h2>
-</section>
-
-<section>
-  <h2>Updating the page</h2>
-  <p>Here's one more super helpful <strong>jQuery function</strong> called `append`:</p>
-  <pre>
+  <p class="fragment">Here's one more super helpful <strong>jQuery function</strong> called `append`:</p>
+  <pre class="fragment">
     <code class="javascript">
       $("#main-container").append("<p>A friendly paragraph!</p>")
     </code>
   </pre>
-  <p>The append function will append whatever <strong>HTML string</strong> you pass it as an argument to the element(s) you originally <strong>selected</strong>.</p>
+  <p class="fragment">The append function will append whatever <strong>HTML string</strong> you pass it as an argument to the element(s) you originally <strong>selected</strong>.</p>
 </section>
 
 <section>
   <h2>Updating the page</h2>
-  <p>Remember, you can add things to strings like this: </p>
-  <pre>
+  <p class="fragment">Remember, you can add things to strings like this: </p>
+  <pre class="fragment">
     <code class="javascript">
       var dataFromSomewhere = "A friendly paragraph!"
       $("#main-container").append("<p>" + dataFromSomewhere + "</p>")
     </code>
   </pre>
-  <p>This is called <strong>string concatenation</strong>.</p>
+  <p class="fragment">This is called <strong>string concatenation</strong>.</p>
 </section>
 
 <section>
@@ -1224,7 +1213,7 @@ What happens when you add two strings together with the plus symbol?
 
 <section>
   <h2>Resources to learn more</h2>
-  <ul>
+  <ul class="fragment">
     <li>Codecademy</li>
     <li>Code School</li>
     <li>Treehouse</li>
@@ -1267,7 +1256,7 @@ What happens when you add two strings together with the plus symbol?
         { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
         { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'lib/highlight/highlight.pack.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
         { src: 'plugin/zoom-js/zoom.js', async: true },
         { src: 'plugin/notes/notes.js', async: true }
         ]
