@@ -25,4 +25,8 @@ Total workshop should take about 2 hours
 ```
 
 ### Notes for Presenter
-When presenting, press 's' on the keyboard to show speaker notes (for questions, asides, etc).
+- When presenting, press 's' on the keyboard to show speaker notes (for questions, asides, etc).
+
+- Keep the intros from the audience short. It's easy to spend a lot of time on intros and lose the attention on the audience. One way to do this is to start right on time (instead of 15 minutes or so after the start time) and just have whoever is there currently do intros, given that a lot of people tend to show up a little later.
+
+- Get to the breakouts as fast as possible, and constantly bring up the console to showcase concepts. Students learn best when they're the ones typing, and not just listening to us lecture.
