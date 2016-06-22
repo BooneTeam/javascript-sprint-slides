@@ -15,13 +15,15 @@ Total workshop should take about 2 hours
 
 ```
 15 mins - Intros and Icebreakers
-10 mins - Why JS matters
-5 mins - JS tools
-30 mins - Part 1: Coding basics with breakouts
-5 min - BREAK
-20 mins - Part 2: Loops, functions, conditionals with breakouts
-30 mins - Part 3: jQuery and interactive web page
-5 mins - Outro and feedback
+15 mins - Part 1: Overview of Why JS matters, examples, and tools we're using
+15 minutes - Part 2: Coding basics walkthrough
+20 minutes - Breakout to code in pairs and general break
+
+15 mins - Part 2: Loops, functions, conditionals
+15 mins - Part 3: jQuery and interactive web page
+20 minutes - Breakout on jQuery in pairs
+
+ 5 mins - Outro and feedback
 ```
 
 ### Notes for Presenter
